@@ -96,35 +96,76 @@ ul{
 }
 
 #main{
-	width: 1200px;
+	width: 900px;
 	margin: auto;
 	margin-top: 110px;
 	position: absolute;
+	font-family: sans-serif;
+	font-size: 13px;
 }
 
 #main img{
 	border: 2px solid rgb(90, 170, 190);
-	float: left;
 	padding: 2px;
-	margin-left: 30px;
-	height: 150px;
+	margin-left: 20px;
+	width: 350px;
+	margin-right: 15px;
+	float: left;
+	margin-bottom: 15px;
 }
+
 
 #name{
 	color: #53514c;
 	font-family: "Bitter",serif;
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 24px;
 	margin-top: 0;
-	font-style: italic;
 }
 
 #text{
-	float: left;
-	width: 500px;
-	margin-left: 15px;
+	margin-left: 20px;
 	color: #53514a;
+	clear: both;
+	margin-bottom: 30px;
 }
+
+.onePage{
+	clear:both;
+	margin-bottom: 30px;
+	height: 250px;
+}
+
+.onePageInfo{
+	padding-left: 10px;
+	float: left;
+}
+
+.original, .mine{
+	height: 30px;
+	width: 450px;
+	margin-bottom: 10px;
+}
+
+.original{
+	background-color: #c2bbb1;
+}
+
+.mine{
+	background-color: rgb(90, 170, 190);
+}
+
+.onePage a{
+	padding: 0;
+	text-decoration: none;
+	color: #53514a;
+	vertical-align: middle;
+}
+
+.onePage a:hover{
+	color: black;
+}
+
 
 </style>
 
@@ -152,14 +193,42 @@ ul{
 
 <div id="main">
  
- <img src="laura.jpg" alt="lauraPhoto" />
+	<div id="text">
+	 I enjoy playing around with HTML and CSS by replicating the design of existing websites from scratch. Below are a couple examples (the images shown are screenshots of my replicas)
+	</div>
 
- <div id="text">
- <span id="name"> Laura Griffiths</span> 
- is a first year Computer Science graduate student at Stanford University specializing in Information Management & Analytics and in Human Computer Interaction
- <br/>
- <p> Prior to her Masters Laura studied Mathematical and Computational Science and Psychology also at Stanford.  </p>
-</div>
+	<div class="onePage">
+		<img src="mindsumo.jpg" alt="mindsumoCopy" />
+		<div class="onePageInfo">
+			<div id="name"> MindSumo </div> 
+			<br/>
+			<div class="original">
+				 &nbsp;&nbsp;&nbsp;
+				<a href="mindsumo.com" class="link"> Original Site </a>
+			</div>
+			<div class="mine">
+				 &nbsp;&nbsp;&nbsp;
+				<a href="http://www.stanford.edu/~laurajg/cgi-bin/Copy/Mindsumo/experiment1.html" class="link"> My Replica </a>
+			</div>
+		</div>	
+	</div>
+
+	<div class="onePage">
+		 <img src="startx.jpg" alt="startXCopy" />
+ 		<div class="onePageInfo">
+			<div id="name"> StartX </div> 
+			<br/>
+			<div class="original">
+				 &nbsp;&nbsp;&nbsp;
+				<a href="startx.stanford.edu" class="link"> Original Site </a>
+			</div>
+			<div class="mine">
+				 &nbsp;&nbsp;&nbsp;
+				<a href="http://www.stanford.edu/~laurajg/cgi-bin/Copy/StartX/startXImitation.html" class="link"> My Replica </a>
+			</div>
+		</div>	
+	</div>
+
 
 
 </div> <!-- end main div -->
